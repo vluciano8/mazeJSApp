@@ -1,6 +1,6 @@
 const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 
-//const userName = prompt('What is your name??');
+const userName = prompt('What is your name??');
 const width = window.innerWidth;
 const height = window.innerHeight;
 const cellsHorizontal = 15;
@@ -186,7 +186,7 @@ Events.on(engine, 'collisionStart', (e) => {
 
 		if (labels.includes(collision.bodyA.label) && labels.includes(collision.bodyB.label)) {
 			//insert some animation to winner!
-			document.querySelector('h1').innerHTML = `Congratulations!<br><span>You Win!!</span>`;
+			document.querySelector('h1').innerHTML = `Congratulations ${userName}!<br><span>You Win!!</span>`;
 			document.querySelector('.winner').classList.remove('hidden');
 			world.gravity.y = 1;
 			world.bodies.forEach((body) => {
