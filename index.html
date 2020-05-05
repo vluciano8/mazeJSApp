@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin:0;
+            overflow: hidden;
+            background-color: "white";
+        }
+        .hidden{
+            display: none !important;
+        }
+        h1{
+            font-family: 'Bungee Outline', cursive;
+            color: yellow;
+            font-size: 60px;
+            text-align: center;
+        }
+        .winner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 100vh;
+            width: 100vw;
+        }
+        span{
+            font-family: 'Bungee Outline', cursive;
+            color: yellow;
+            font-size: 70px;
+            text-align: center;
+        }
+        a{
+            z-index: 1;
+        }
+    </style>
+    <title>Maze with Mather JS</title>
+</head>
+<body>
+    <div class="winner hidden">
+        <h1></h1>
+    </div>
+    <a href="https://github.com/vluciano8"  class="has-text-dark" target="_blank"> 
+        <i class="fab fa-github" id="github">test</i> 
+    </a>
+<script src="index.js"></script>    
+</body>
+</html>
