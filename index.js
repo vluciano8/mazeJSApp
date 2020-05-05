@@ -3,8 +3,8 @@ const { Engine, Render, Runner, World, Bodies, Body, Events } = Matter;
 //const userName = prompt('What is your name??');
 const width = window.innerWidth;
 const height = window.innerHeight;
-const cellsHorizontal = 16;
-const cellsVertical = 14;
+const cellsHorizontal = 15;
+const cellsVertical = 12;
 const unitLengthX = width / cellsHorizontal;
 const unitLengthY = height / cellsVertical;
 
